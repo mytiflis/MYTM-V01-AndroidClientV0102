@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SGC Teknisyen</string>
+
+    <!-- Login -->
+    <string name="login_title">SGC Teknisyen</string>
+    <string name="login_subtitle">Kullanıcı adı ve şifre ile giriş yapın</string>
+    <string name="hint_username">Kullanıcı adı</string>
+    <string name="hint_password">Şifre</string>
+    <string name="btn_login">Giriş Yap</string>
+    <string name="remember_me">Beni hatırla</string>
+    <string name="login_error_invalid">Kullanıcı adı veya şifre hatalı</string>
+    <string name="login_error_network">Sunucuya bağlanılamıyor</string>
+
+    <!-- Home -->
+    <string name="home_title">İş Emirlerim</string>
+    <string name="empty_jobs">Atanmış iş emriniz yok</string>
+    <string name="pull_to_refresh">Yenilemek için çekin</string>
+
+    <!-- Job Detail -->
+    <string name="job_detail_title">İş Emri Detayı</string>
+    <string name="btn_checkin">Check-in</string>
+    <string name="btn_checkout">Check-out</string>
+    <string name="btn_start">Başlat</string>
+    <string name="btn_complete">Tamamla</string>
+    <string name="btn_form">Form</string>
+    <string name="btn_photo">Fotoğraf</string>
+
+    <!-- Form -->
+    <string name="form_title">Şantiye Faaliyet Formu</string>
+    <string name="btn_submit">Gönder</string>
+    <string name="btn_save_draft">Taslak Kaydet</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="sync_status_pending">%d işlem bekliyor</string>
+    <string name="sync_status_syncing">Senkronize ediliyor…</string>
+    <string name="sync_status_synced">Senkronize</string>
+    <string name="location_service_active">Konum takibi aktif</string>
+    <string name="location_service_inactive">Konum takibi kapalı</string>
+    <string name="toggle_location_service">Konum Servisini Aç/Kapat</string>
+
+    <!-- Permissions -->
+    <string name="permission_location_title">Konum İzni Gerekli</string>
+    <string name="permission_location_message">İş emri check-in/out ve konum takibi için konum iznine ihtiyacımız var.</string>
+    <string name="permission_camera_title">Kamera İzni Gerekli</string>
+    <string name="permission_camera_message">İş emri fotoğrafı çekmek için kamera iznine ihtiyacımız var.</string>
+    <string name="permission_notification_title">Bildirim İzni Gerekli</string>
+    <string name="permission_notification_message">Arka plan konum takibi için bildirim iznine ihtiyacımız var.</string>
+</resources>

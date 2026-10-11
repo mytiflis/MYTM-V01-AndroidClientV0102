@@ -1,0 +1,62 @@
+# Gradle
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
+local.properties
+*.keystore
+!app/debug.keystore
+gradle.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.so
+*.jar
+*.class
+*.dex
+
+# Kotlin
+*.kt.metadata
+
+# Test reports
+*/build/reports/
+
+# Room
+schemas/
+
+# Hilt
+app/build/generated/hilt/
+
+# Compose
+*.compose_binary
+
+# Mock server
+mock-server/node_modules/
+mock-server/.env
+mock-server/*.log
+
+# Release keystore (never commit!)
+app/release.keystore
+*.jks
+
+# EncryptedSharedPreferences keys (generated at runtime)
+encrypted_prefs.xml

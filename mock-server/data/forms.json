@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "is_emri_no": "IE-2026-003",
+    "teknisyen_id": 1,
+    "tarih": "2026-10-12",
+    "baslangic_saati": "08:30",
+    "bitis_saati": "17:00",
+    "konu": "Chiller ünitesi arıza onarımı",
+    "yapilan_isler": "Chiller ünitesinde soğutma gazı kaçağı tespit edildi. Kaçak noktası اللحam yöntemiyle kapatıldı. Sistem boşaltıldı, vakuum çekildi ve gaz dolumu yapıldı. Test basınçları kontrol edildi.",
+    "kullanilan_malzemeler": "R410A gaz 5kg, اللحam tel, nirogaz, vakuum pompası yağı",
+    "arizalar": "Soğutma gazı kaçağı (kompanzatör çıkış borusu)",
+    "notlar": "Müşteriye 1 yıl garanti belgesi verildi. Periyodik bakım için 6 ay sonra tekrar gelinecek.",
+    "imza_base64": null,
+    "foto_base64_list": [],
+    "createdAt": "2026-10-12T17:30:00Z"
+  },
+  {
+    "id": 2,
+    "is_emri_no": "IE-2026-004",
+    "teknisyen_id": 1,
+    "tarih": "2026-10-13",
+    "baslangic_saati": "10:00",
+    "bitis_saati": "16:00",
+    "konu": "VRV sistem periyodik bakım",
+    "yapilan_isler": "Tüm iç üniteler filtre temizliği yapıldı. Dış ünite kondansatör bobinleri temizlendi. Soğutma gazı basınçları ölçüldü ve kayıt altına alındı. Elektrik bağlantıları kontrol edildi.",
+    "kullanilan_malzemeler": "Filtre temizlik spreyi, bobin temizleyici, manometre seti",
+    "arizalar": null,
+    "notlar": "Sistem performansı normal seviyelerde. Bir sonraki bakım 6 ay sonra planlandı.",
+    "imza_base64": null,
+    "foto_base64_list": [],
+    "createdAt": "2026-10-13T16:30:00Z"
+  }
+]

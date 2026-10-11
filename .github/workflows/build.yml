@@ -1,0 +1,99 @@
+name: Build SGC Teknisyen Android Client
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Show toolchain info
+        run: |
+          java -version
+          gradle --version
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          ls "$ANDROID_SDK_ROOT/platforms" || true
+
+      - name: Generate release keystore (local install signing)
+        run: |
+          keytool -genkeypair -v \
+            -keystore "$RUNNER_TEMP/sgc-release.keystore" \
+            -alias sgc \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass sgcpass -keypass sgcpass \
+            -dname "CN=SGC Teknisyen, O=SGC, L=Ankara, C=TR"
+          echo "SGC_KEYSTORE=$RUNNER_TEMP/sgc-release.keystore" >> "$GITHUB_ENV"
+          echo "SGC_KEYSTORE_PASSWORD=sgcpass" >> "$GITHUB_ENV"
+          echo "SGC_KEY_ALIAS=sgc" >> "$GITHUB_ENV"
+          echo "SGC_KEY_PASSWORD=sgcpass" >> "$GITHUB_ENV"
+
+      - name: Build signed release APK
+        working-directory: ./app
+        run: gradle --no-daemon assembleRelease
+
+      - name: Locate and rename APK
+        working-directory: ./app
+        run: |
+          set -euo pipefail
+          SRC=$(find build/outputs/apk/release -name '*.apk' | head -n 1)
+          echo "APK kaynağı: $SRC"
+          cp "$SRC" ../SGC-Teknisyen-Android.apk
+          ls -la ../SGC-Teknisyen-Android.apk
+          SIZE=$(stat -c%s ../SGC-Teknisyen-Android.apk)
+          echo "APK boyutu: $SIZE bayt"
+          if [ "$SIZE" -lt 100000 ]; then echo "HATA: APK çok küçük/sahte"; exit 1; fi
+
+      - name: Verify APK (zip + manifest + signature)
+        working-directory: ./app
+        run: |
+          set -euo pipefail
+          file ../SGC-Teknisyen-Android.apk
+          unzip -l ../SGC-Teknisyen-Android.apk | grep -E 'AndroidManifest.xml|classes.dex|resources.arsc' || { echo "HATA: APK yapısı eksik"; exit 1; }
+          if unzip -l ../SGC-Teknisyen-Android.apk | grep -Eq 'META-INF/.*\.(RSA|DSA|EC|SF)'; then
+            echo "v1 (JAR) imza dosyaları mevcut"
+          else
+            echo "v1 JAR imzası yok (minSdk>=24 için normal; v2/v3 APK Signing Block kullanılır)"
+          fi
+          BT=$(ls -d "$ANDROID_SDK_ROOT"/build-tools/* | sort -V | tail -n 1)
+          echo "build-tools: $BT"
+          "$BT/apksigner" verify --verbose --print-certs ../SGC-Teknisyen-Android.apk
+          echo "İMZA DOĞRULANDI (apksigner)"
+
+      - name: Compute SHA256
+        run: |
+          set -euo pipefail
+          sha256sum SGC-Teknisyen-Android.apk | tee SGC-Teknisyen-Android.apk.sha256
+          cat SGC-Teknisyen-Android.apk.sha256
+
+      - name: Upload artifact (SGC-Teknisyen-Client)
+        uses: actions/upload-artifact@v4
+        with:
+          name: SGC-Teknisyen-Client
+          path: |
+            SGC-Teknisyen-Android.apk
+            SGC-Teknisyen-Android.apk.sha256
+          if-no-files-found: error
+          retention-days: 30

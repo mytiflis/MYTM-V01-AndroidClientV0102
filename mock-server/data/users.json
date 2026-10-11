@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "username": "teknisyen1",
+    "password": "123456",
+    "email": "teknisyen1@sgc.com",
+    "fullName": "Ahmet Yılmaz",
+    "role": "teknisyen",
+    "teknisyenId": 1,
+    "firstName": "Ahmet",
+    "lastName": "Yılmaz",
+    "phone": "0555 123 45 67"
+  },
+  {
+    "id": 2,
+    "username": "teknisyen2",
+    "password": "123456",
+    "email": "teknisyen2@sgc.com",
+    "fullName": "Mehmet Demir",
+    "role": "teknisyen",
+    "teknisyenId": 2,
+    "firstName": "Mehmet",
+    "lastName": "Demir",
+    "phone": "0555 234 56 78"
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "password": "admin123",
+    "email": "admin@sgc.com",
+    "fullName": "Admin User",
+    "role": "admin",
+    "teknisyenId": null,
+    "firstName": "Admin",
+    "lastName": "User",
+    "phone": null
+  }
+]

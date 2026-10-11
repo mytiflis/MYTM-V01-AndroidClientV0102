@@ -1,0 +1,133 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SgcTeknisyen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_light</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryContainer">@color/brand_primary_light</item>
+        <item name="colorOnSecondary">@color/brand_on_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/brand_on_primary</item>
+
+        <!-- Tertiary -->
+        <item name="colorTertiary">@color/brand_secondary</item>
+        <item name="colorTertiaryContainer">@color/brand_primary_light</item>
+        <item name="colorOnTertiary">@color/brand_on_primary</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+        <item name="colorErrorContainer">#FFDAD6</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="colorOnErrorContainer">#410002</item>
+
+        <!-- Surface -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/on_surface_variant</item>
+
+        <!-- Background -->
+        <item name="colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/on_surface</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/brand_primary_dark</item>
+        <item name="android:navigationBarColor">@color/background</item>
+
+        <!-- Shape -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SgcTeknisyen.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SgcTeknisyen.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SgcTeknisyen.LargeComponent</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.SgcTeknisyen.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.SgcTeknisyen.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.SgcTeknisyen.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.SgcTeknisyen.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.SgcTeknisyen.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.SgcTeknisyen.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.SgcTeknisyen.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.SgcTeknisyen.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.SgcTeknisyen.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.SgcTeknisyen.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.SgcTeknisyen.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.SgcTeknisyen.LabelSmall</item>
+    </style>
+
+    <!-- Shape Appearance -->
+    <style name="ShapeAppearance.SgcTeknisyen.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SgcTeknisyen.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SgcTeknisyen.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Text Appearance Overrides -->
+    <style name="TextAppearance.SgcTeknisyen.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="TextAppearance.SgcTeknisyen.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+</resources>

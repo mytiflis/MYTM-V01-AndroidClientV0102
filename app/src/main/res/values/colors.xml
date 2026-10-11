@@ -1,0 +1,38 @@
+<resources>
+    <!-- Brand colors (SGC Blue) -->
+    <color name="brand_primary">#0B3B60</color>
+    <color name="brand_primary_dark">#082C48</color>
+    <color name="brand_primary_light">#1976D2</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_secondary">#1976D2</color>
+    <color name="brand_on_secondary">#FFFFFF</color>
+
+    <!-- Status colors -->
+    <color name="status_pending">#FF9800</color>
+    <color name="status_active">#2196F3</color>
+    <color name="status_completed">#4CAF50</color>
+    <color name="status_cancelled">#F44336</color>
+
+    <!-- Priority colors -->
+    <color name="priority_low">#4CAF50</color>
+    <color name="priority_normal">#2196F3</color>
+    <color name="priority_high">#FF9800</color>
+    <color name="priority_urgent">#F44336</color>
+
+    <!-- Surface / Background -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="background">#FAFAFA</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="on_surface_variant">#49454F</color>
+
+    <!-- Error -->
+    <color name="error">#BA1A1A</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Notification foreground service -->
+    <color name="notification_bg">#0B3B60</color>
+</resources>

@@ -1,0 +1,84 @@
+[
+  {
+    "no": "IE-2026-001",
+    "firma": "ABC Teknoloji A.Ş.",
+    "adres": "Atatürk Mah. Teknoloji Cad. No: 45, Çankaya/Ankara",
+    "telefon": "0312 555 01 01",
+    "tarih": "2026-10-10T09:00:00Z",
+    "oncelik": "ACIL",
+    "is_durumu": "ATANDI",
+    "atanan_id": 1,
+    "urunler": [
+      { "id": 1, "adi": "Split Klima 12000 BTU", "miktar": 2, "birim": "Adet", "aciklama": "Daikin marca" },
+      { "id": 2, "adi": "Montaj Malzemeleri Seti", "miktar": 1, "birim": "Set", "aciklama": "Boru, kablo, izolasyon" },
+      { "id": 3, "adi": "Gaz Dolumu (R410A)", "miktar": 2, "birim": "kg", "aciklama": null }
+    ],
+    "latitude": 39.9208,
+    "longitude": 32.8541
+  },
+  {
+    "no": "IE-2026-002",
+    "firma": "XYZ İnşaat Ltd. Şti.",
+    "adres": "Cumhuriyet Mah. İnşaat Sk. No: 12, Keçiören/Ankara",
+    "telefon": "0312 555 02 02",
+    "tarih": "2026-10-11T14:00:00Z",
+    "oncelik": "NORMAL",
+    "is_durumu": "ATANDI",
+    "atanan_id": 1,
+    "urunler": [
+      { "id": 4, "adi": "Merkezi Isıtım Ünitesi", "miktar": 1, "birim": "Adet", "aciklama": "Vaillant ecoTEC" },
+      { "id": 5, "adi": "Radyatör 60x100", "miktar": 8, "birim": "Adet", "aciklama": "Panel radyatör" },
+      { "id": 6, "adi": "Termostatik Vanalar", "miktar": 8, "birim": "Adet", "aciklama": "Honeywell" }
+    ],
+    "latitude": 39.9812,
+    "longitude": 32.8623
+  },
+  {
+    "no": "IE-2026-003",
+    "firma": "Merkez Hastanesi",
+    "adres": "Sağlık Mah. Hastane Cad. No: 1, Yenimahalle/Ankara",
+    "telefon": "0312 555 03 03",
+    "tarih": "2026-10-12T08:30:00Z",
+    "oncelik": "ACIL",
+    "is_durumu": "BASLADI",
+    "atanan_id": 1,
+    "urunler": [
+      { "id": 7, "adi": "Chiller Ünitesi 500 kW", "miktar": 1, "birim": "Adet", "aciklama": "Carrier AquaForce" },
+      { "id": 8, "adi": "Pompa Grubu", "miktar": 2, "birim": "Adet", "aciklama": "Grundfos" }
+    ],
+    "latitude": 39.9678,
+    "longitude": 32.6789
+  },
+  {
+    "no": "IE-2026-004",
+    "firma": "Metro AVM",
+    "adres": "Eskişehir Yolu 7. km, Çankaya/Ankara",
+    "telefon": "0312 555 04 04",
+    "tarih": "2026-10-13T10:00:00Z",
+    "oncelik": "DUSUK",
+    "is_durumu": "TAMAMLANDI",
+    "atanan_id": 1,
+    "urunler": [
+      { "id": 9, "adi": "VRV Sistem İç Ünitesi", "miktar": 12, "birim": "Adet", "aciklama": "Mitsubishi" },
+      { "id": 10, "adi": "Kanal Tipi İç Ünite", "miktar": 4, "birim": "Adet", "aciklama": null }
+    ],
+    "latitude": 39.8765,
+    "longitude": 32.7654
+  },
+  {
+    "no": "IE-2026-005",
+    "firma": "Teknopark Ankara",
+    "adres": "Üniversiteler Mah. Teknopark Bulvarı No: 1, Etimesgut/Ankara",
+    "telefon": "0312 555 05 05",
+    "tarih": "2026-10-14T11:00:00Z",
+    "oncelik": "NORMAL",
+    "is_durumu": "ATANDI",
+    "atanan_id": 1,
+    "urunler": [
+      { "id": 11, "adi": "Fan Coil Ünitesi", "miktar": 20, "birim": "Adet", "aciklama": "Carrier" },
+      { "id": 12, "adi": "Dış Ünite (VRV)", "miktar": 3, "birim": "Adet", "aciklama": "Daikin VRV IV" }
+    ],
+    "latitude": 39.9456,
+    "longitude": 32.5678
+  }
+]
