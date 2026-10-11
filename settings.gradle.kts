@@ -10,10 +10,10 @@ pluginManagement {
                 useModule("com.android.tools.build:gradle:8.7.2")
             }
             if (requested.id.id == "org.jetbrains.kotlin.android") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
             }
             if (requested.id.id == "org.jetbrains.kotlin.kapt") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
             }
             if (requested.id.id == "com.google.dagger.hilt.android") {
                 useModule("com.google.dagger:hilt-android-gradle-plugin:2.51.1")
