@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt)
 }
@@ -78,7 +79,6 @@ android {
 }
 
 dependencies {
-    // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.activity.compose)
@@ -88,7 +88,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.savedstate)
 
-    // Compose BOM + components
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.graphics)
@@ -96,20 +95,16 @@ dependencies {
     implementation(libs.compose.material.icons.extended)
     implementation(libs.compose.runtime)
 
-    // Navigation Compose
     implementation(libs.navigation.compose)
 
-    // Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
-    // Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     kapt(libs.room.compiler)
 
-    // Retrofit & OkHttp
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.okhttp)
@@ -118,25 +113,13 @@ dependencies {
     implementation(libs.moshi)
     implementation(libs.moshi.kotlin)
 
-    // Coroutines
     implementation(libs.coroutines.android)
-
-    // WorkManager
     implementation(libs.work.runtime)
-
-    // Google Play Services Location
     implementation(libs.play.services.location)
-
-    // Security (EncryptedSharedPreferences)
     implementation(libs.security.crypto)
-
-    // Coil
     implementation(libs.coil.compose)
-
-    // Serialization
     implementation(libs.kotlinx.serialization.json)
 
-    // Testing
     testImplementation(libs.junit)
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.coroutines.test)
