@@ -15,9 +15,6 @@ pluginManagement {
             if (requested.id.id == "org.jetbrains.kotlin.kapt") {
                 useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
             }
-            if (requested.id.id == "org.jetbrains.kotlin.plugin.compose") {
-                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21")
-            }
             if (requested.id.id == "com.google.dagger.hilt.android") {
                 useModule("com.google.dagger:hilt-android-gradle-plugin:2.51.1")
             }
