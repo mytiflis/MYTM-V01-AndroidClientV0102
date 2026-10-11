@@ -6,9 +6,11 @@ plugins {
     alias(libs.plugins.hilt)
     alias(libs.plugins.kotlin.serialization)
 }
+
 android {
     namespace = "com.sgc.teknisyen"
     compileSdk = libs.versions.compileSdk.get().toInt()
+
     defaultConfig {
         applicationId = "com.sgc.teknisyen"
         minSdk = libs.versions.minSdk.get().toInt()
@@ -19,18 +21,7 @@ android {
         buildConfigField("String", "BASE_URL", "\"http://10.0.2.2:3303/api/\"")
         buildConfigField("String", "VERSION_NAME", "\"${defaultConfig.versionName}\"")
     }
-    buildTypes {
-        release {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release")
-        }
-        debug {
-            isMinifyEnabled = false
-            isDebuggable = true
-            signingConfig = signingConfigs.getByName("debug")
-        }
-    }
+
     signingConfigs {
         create("debug") {
             storeFile = file("debug.keystore")
@@ -48,10 +39,25 @@ android {
             }
         }
     }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("release")
+        }
+        debug {
+            isMinifyEnabled = false
+            isDebuggable = true
+            signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
         freeCompilerArgs += listOf(
@@ -59,16 +65,19 @@ android {
             "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
         )
     }
+
     buildFeatures {
         compose = true
         buildConfig = true
     }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1,LICENSE,NOTICE}*"
         }
     }
 }
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity)
