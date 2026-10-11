@@ -79,6 +79,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1,LICENSE,NOTICE}*"
         }
     }
+
+    // AndroidX zorunlu - gradle.properties okunmazsa bile çalışsın
+    android.useAndroidX.set(true)
+    android.enableJetifier.set(true)
 }
 
 dependencies {
