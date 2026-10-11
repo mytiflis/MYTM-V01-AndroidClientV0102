@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
     <style name="Theme.SgcTeknisyen" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/brand_primary</item>
@@ -38,14 +39,24 @@
         <item name="android:navigationBarColor">@color/background</item>
 
         <!-- Shape -->
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SgcTeknisyen.SmallComponent</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SgcTeknisyen.MediumComponent</item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SgcTeknisyen.LargeComponent</item>
+        <item name="shapeAppearanceSmallComponent">
+            @style/ShapeAppearance.SgcTeknisyen.SmallComponent
+        </item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.SgcTeknisyen.MediumComponent
+        </item>
+        <item name="shapeAppearanceLargeComponent">
+            @style/ShapeAppearance.SgcTeknisyen.LargeComponent
+        </item>
 
         <!-- Typography -->
-        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.SgcTeknisyen.HeadlineLarge</item>
-        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.SgcTeknisyen.HeadlineMedium</item>
-        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.SgcTeknisyen.HeadlineSmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.SgcTeknisyen.HeadlineLarge
+        </item>
+        <item name="textAppearanceHeadlineMedium">
+            @style/TextAppearance.SgcTeknisyen.HeadlineMedium
+        </item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.SgcTeknisyen.HeadlineSmall
+        </item>
         <item name="textAppearanceTitleLarge">@style/TextAppearance.SgcTeknisyen.TitleLarge</item>
         <item name="textAppearanceTitleMedium">@style/TextAppearance.SgcTeknisyen.TitleMedium</item>
         <item name="textAppearanceTitleSmall">@style/TextAppearance.SgcTeknisyen.TitleSmall</item>
@@ -130,4 +141,6 @@
         <item name="fontFamily">sans-serif-medium</item>
         <item name="android:textColor">@color/on_surface_variant</item>
     </style>
+
+    <style name="Theme.MYTMV0102" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
